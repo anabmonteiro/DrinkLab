@@ -1,0 +1,56 @@
+/* tamanhos de tela */
+@media (min-width: 1024px) {
+    body {
+        background-image: url("../assets/imagens/fundoreceitas.png");
+        max-height: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-image: url("../assets/imagens/fundoreceitas.png");
+        min-height: 1023px;
+        max-height: 100%;
+
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        background-image: url("../assets/imagens/fundoreceitas.png");
+        min-height: 767px;
+        max-height: 100vh;
+
+    }
+}
+
+div.col {
+    display: flex;
+    justify-content: center;
+}
+
+div.card.card-carousel {
+
+    --bs-card-title-color: #ECE5DC;
+    --bs-card-color: rgba(249, 239, 235, 0.62);
+    background-color: rgba(236, 229, 220, 0.06);
+    border-color: transparent;
+    border-width: 0.8rem;
+    font-family: 'Kadwa-Regular', sans-serif;
+    font-size: 0.90rem;
+    height: 29rem;
+    margin-bottom: 2rem;
+    width: 15rem;
+    margin-top:4rem;
+}
+
+div.titulo h2{
+    margin-top: 10rem;
+    color: #ece5dc69;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: 'poppins',sans-serif;
+    font-weight: 400;
+}

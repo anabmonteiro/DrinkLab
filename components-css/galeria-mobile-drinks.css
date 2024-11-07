@@ -1,0 +1,42 @@
+.iphone {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.iphone .overlap-group-wrapper {
+    background-color: transparent;
+    width: 390px;
+    height: 400px;
+}
+
+.iphone .overlap-group {
+    position: relative;
+    height: 400px;
+}
+
+.iphone .group {
+    top: 128px;
+    position: absolute;
+    width: 390px;
+    height: 128px;
+    left: 0;
+}
+
+.iphone .group-2 {
+    top: 0;
+    position: absolute;
+    width: 390px;
+    height: 128px;
+    left: 0;
+}
+
+.iphone .group-3 {
+    top: 256px;
+    position: absolute;
+    width: 390px;
+    height: 128px;
+    left: 0;
+}

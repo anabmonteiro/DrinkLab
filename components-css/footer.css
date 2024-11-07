@@ -1,0 +1,218 @@
+.footer {
+    background-color: #EDE5DD;
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 18px;
+    margin-top: 8rem;
+    padding-left: 5vw;
+    padding-right: 1vw;
+    padding-top: 3vw;
+    padding-bottom: 1.8vw;
+
+}
+
+.footer .left {
+    width: 100%;
+    float: left;
+    border-bottom: 1px #222424 solid;
+    border-right: 0;
+}
+
+.footer .title-footer {
+    color: rgb(35, 37, 32);
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    width: 100%;
+    float: left;
+    margin-bottom: 0rem;
+    margin-top: 0.2vw;
+}
+
+.footer .title-footer span {
+    color: #562C2C;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+}
+
+/* Footer links */
+.footer .links {
+
+    width: 100%;
+    float: left;
+    color: #EDE5DD;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.footer .links a {
+    display: block;
+    line-height: 33px;
+    text-decoration: none;
+    color: rgb(35, 37, 32);
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    width: fit-content;
+}
+
+.footer .links a:hover {
+    color: #562C2C;
+}
+
+.footer .Copyright {
+    font-family: 'poppins', sans-serif;
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+/*Rede Sociais*/
+.footer .footer-icons {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.footer .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: rgb(35, 37, 32);
+    border-radius: 50px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    color: #EDE5DD;
+    text-align: center;
+    line-height: 35px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.footer .footer-icons a:hover {
+    background-color: #562C2C;
+}
+
+/*Right*/
+.footer .right {
+    width: 100%;
+    float: left;
+}
+
+/*formulario*/
+.footer form {
+    width: 100%;
+    float: left;
+}
+
+.footer form input,
+.footer form textarea {
+    display: block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: rgb(35, 37, 32);
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    font: inherit;
+    font-size: 14px;
+    font-family: 'poppins', sans-serif;
+    font-weight: lighter;
+    color: #ede5dd;
+    width: 100%;
+    padding: 18px;
+}
+
+.footer .form {
+    margin-top: 20px;
+}
+
+.footer ::-webkit-input-placeholder {
+    color: #ede5dd9d;
+}
+
+.footer ::-moz-placeholder {
+    color: #232520ab;
+    opacity: 1;
+}
+
+.footer :-ms-input-placeholder {
+    color: #232520ab;
+}
+
+.footer form input {
+
+    width: 100%;
+    height: 55px;
+    float: left;
+    margin-bottom: 15px;
+    border-radius: 0.7rem;
+}
+
+.footer form textarea {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.footer form .btn {
+    border-radius: 0.5rem;
+    background-color: #232520;
+    color: #EDE5DD;
+    border: 0;
+    padding: 5px 40px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 200;
+    float: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer form .btn:hover {
+    background-color: #562C2C;
+}
+
+/*Responsive*/
+@media (min-width: 1280px) {
+    .footer {
+        padding: 1.5rem 4rem 1rem 4rem;
+    }
+
+    .footer .Copyright {
+        font-size: 16px;
+    }
+
+    .footer form input,
+    .footer form textarea {
+        width: 100%;
+        float: left;
+    }
+
+    .footer form button {
+        padding: 10px 35px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .footer .left {
+        width: 48%;
+        border-bottom: 0;
+    }
+
+    .footer .right {
+        width: 48%;
+        padding-left: 4%;
+        border-left: 1px #222424 solid;
+    }
+
+    .footer form {
+        margin-top: 30px;
+    }
+
+    .footer form {
+        display: block;
+    }
+
+}
