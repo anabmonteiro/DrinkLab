@@ -1,0 +1,176 @@
+/* tamanhos de tela */
+@media (min-width: 1024px) {
+    body {
+        background-image: url("../assets/imagens/fundoreceitas.png");
+        min-height: 1080px;
+        max-height: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-image: url("../assets/imagens/fundoreceitas.png");
+        min-height: 1023px;
+        max-height: 100%;
+
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        background-image: url("../assets/imagens/fundoreceitas.png");
+        min-height: 767px;
+        max-height: 100vh;
+
+    }
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("../assets/fonts/Poppins.ttf");
+    font-weight: normal;
+
+}
+
+@font-face {
+    font-family: Poppins-ExtraLight;
+    src: url("../assets/fonts/Poppins-ExtraLight.ttf");
+    font-weight: lighter;
+
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url("../assets/fonts/Poppins-SemiBold.ttf");
+    font-weight: 500;
+
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url("../assets/fonts/Poppins-Light.ttf");
+    font-weight: 200;
+
+}
+
+div.container{
+    margin-bottom: 7rem;
+}
+
+div.row {
+    font-size: max(3px, 1vw), min(1px, 1vw);
+
+}
+
+div h1 {
+    color: #EDE5DD;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3, 5rem;
+    margin-bottom: 2rem;
+    margin-top: 10rem;
+}
+
+
+.subtitulocosmo {
+    color: rgba(249, 239, 235, 0.62);
+    font-family: 'Poppins-Light', sans-serif;
+    font-weight: 200;
+    margin-bottom: 3rem;
+}
+
+
+
+.tags1 {
+    color: #EDE5DD;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: rgba(124, 111, 93, 0.23);
+    display: inline;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    border-radius: 0.5vw;
+
+}
+
+.tags2 {
+    color: #EDE5DD;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: rgba(124, 111, 93, 0.23);
+    display: inline;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    border-radius: 0.5vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.tags3 {
+    color: #EDE5DD;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: rgba(124, 111, 93, 0.23);
+    display: inline;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    border-radius: 0.5vw;
+
+
+}
+
+
+div.row div.col-6 img.img-drink {
+    margin-top: 10rem;
+}
+
+div.row div.col-6 img.img-grafico {
+    margin-top: 2rem;
+}
+
+
+p.receitasubtitulos {
+    color: #EDE5DD;
+    font-family: 'Poppins-SemiBold', sans-serif;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+.receitaitens {
+    color: rgba(249, 239, 235, 0.62);
+    font-family: 'Poppins-ExtraLight', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+
+div.textocorrido {
+    margin-top: 3rem;
+}
+
+.card-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #EDE5DD;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    margin-top: 10rem;
+    padding: 0.7% 2% 1.3% 2%;
+    border-radius: 50%;
+    background-color: rgba(236, 229, 220, 0.06);
+    font-size: 1.5rem;
+}
+
+.image-container {
+    position: relative;
+    display: inline-flex;
+}

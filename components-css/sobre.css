@@ -1,0 +1,72 @@
+
+/* tamanhos de tela */
+@media (min-width: 1024px) {
+    body{
+        background-image: url("../assets/imagens/fundoreceitas.png");
+        min-height: 1080px;
+        max-height: 100%;
+    background-size: 100% ;
+       background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+            background-image: url("../assets/imagens/fundoreceitas.png");
+            min-height: 1023px;
+            max-height: 100%;
+            
+        }
+}
+
+@media (max-width: 767px) {
+    body{
+            background-image: url("../assets/imagens/fundoreceitas.png");
+            min-height: 767px;
+            max-height: 100vh;
+            
+        }
+}
+
+section.drinkvideo video.videodrinklab {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+ 
+}
+
+
+/* arrumando video */
+ .drinkvideo {
+     position: relative;
+     height: 100vh;
+ }
+
+ /* arrumando posição do botão setinha p baixo */
+ .overlay {
+     position: absolute;
+     left: 50%;
+     text-align: center;
+     bottom: 10px;
+ }
+
+ /* estilo botão setinha p baixo */
+ .bi-chevron-down {
+     font-size: 2rem;
+     color: #ECE5DC;
+ }
+
+ /* estilo texto sobre */
+ div#textoapresentação p {
+     text-align: center;
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.2rem;
+     text-align: center;
+     color: #ede5ddc0;
+     margin-left: 5vw;
+     margin-right: 5vw;
+     margin-top: 10rem;
+     margin-bottom: 3rem;
+ }

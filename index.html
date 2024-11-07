@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--ligando html com os css -->
+    <title>DrinkLab</title>
+    <link rel="icon" href="./assets/imagens/icone.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./components-css/nav.css">
+    <link rel="stylesheet" href="./components-css/index.css">
+    <link rel="stylesheet" href="./components-css/galeria-mobile.css">
+    <link rel="stylesheet" href="./components-css/footer.css">
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+
+    <!--biblioteca de icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <div>
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand a" href="./index.html" id="inicio-link">
+                    <img src="assets/imagens/logocomfundo.png" alt="Bootstrap" width="138" height="75">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+
+                    <!-- nome das páginas na nav bar-->
+                    <ul class="navbar-nav nav-underline ml-auto ">
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" id="receitas-link"
+                                href="components/receitas.html">Receitas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" id="favoritos-link"
+                                href="components/favoritos.html">Favoritos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" id="sobre-link"
+                                href="components/sobre.html">Sobre</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" id="fale-conosco-link"
+                                href="components/fale-conosco.html">Fale
+                                Conosco</a>
+                        </li>
+
+
+                    </ul>
+
+                    <form class="d-none  d-flex d-lg-flex justify-content-center" role="search">
+                        <input class="form-control" type="search" placeholder="Drinks" aria-label="Search">
+                        <!-- modelo icone--> <button class="btn" type="submit"><span
+                                class="bi bi-search"></span></button>
+                    </form>
+
+
+                    <ul class="navbar-nav nav-underline ml-auto " id="ul-acesso">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" id="acesso-link"
+                                href="components/acesso.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <!-- Modal (aviso +18) -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p id="titulo-aviso">DRINK LAB</p>
+                    <p id="subtitulo-aviso">HOME BAR</p>
+                </div>
+                <div class="modal-body">
+                    <h4 id="mensagem-modal">VOCÊ TEM <b>MAIS DE 18 ANOS?</b></h4>
+                    <button type="button" class="btn" id="button-sim" data-bs-dismiss="modal"> SIM</button>
+                    <button type="button" class="btn" id="button-nao" data-bs-dismiss="modal"> NÃO </button>
+                </div>
+                <div class="modal-footer">
+                    <p id="maiordeidade"> CONTEÚDO DESTINADO A MAIORES DE 18 ANOS </p> </br>
+                    <p id="aviso-compartilhar"> NÃO COMPARTILHE COM MENORES DE 18 ANOS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--sessão do incio -titulo da pagina, subtitulo e botão ver receitas -->
+    <section>
+        <div class="home">
+            <h1>
+                Pensando em <br>
+                um evento <br>
+                especial?</h1>
+        </div>
+
+        <div class="home p1">
+            <p1> Drinks incríveis te esperam </p1>
+        </div>
+
+        <!--Botão + icone -->
+        <div class="home">
+            <a href="./components/receitas.html" class="btn-btn-primary-btn-custom"> Ver receitas
+                <i class="bi bi-chevron-right"></i>
+            </a>
+        </div>
+
+        <!--Botão setinha p baixo + config de estilo -->
+        <p class="text-center scroll-button">
+            <a class="btn2 btn-primary btn-custom" role="button" id="scrollButton">
+                <i class="bi bi-chevron-down" style="font-size:2rem; color:#ECE5DC"> </i>
+            </a>
+        </p>
+    </section>
+
+    <section>
+        <!--Botão + icone 2 -->
+        <div class="container">
+            <div class="col-lg-12">
+                <p class="text-center"> Em alta no Drink Lab
+                    <a id="buttonVerTudo" href="./components/receitas.html" class="btn btn-primary btn-custom"> Ver tudo
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+
+
+        <!--carrosel drinks -->
+        <div class="splide" aria-label="Splide Basic HTML Example">
+
+            <div class="splide__track">
+
+                <ul class="splide__list">
+
+                    <li class="splide__slide">
+
+                        <div class="card card-carousel">
+                            <a href="./components/drinks/gintonica.html">
+                                <img src="assets/imagens/gintonica.png" class="card-img-top" alt="gintonica">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gin Tônica</h5>
+                                    <p class="card-text"> É o drink do momento, sofisticado e refrescante.
+                                        Permite diversas variações e toques especiais.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </li>
+
+                    <li class="splide__slide">
+
+                        <div class="card card-carousel">
+                            <a href="./components/drinks/cosmopolitan.html">
+                                <img src="assets/imagens/cosmopolitan.png" class="card-img-top" alt="cosmopolitan">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cosmopolitan</h5>
+                                    <p class="card-text">O Cosmopolitan é um drink clássico da coquetelaria e muito
+                                        fácil de
+                                        ser
+                                        reproduzido em casa. </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+
+                        <div class="card card-carousel">
+                            <a href="./components/drinks/bloodymary.html">
+                                <img src="assets/imagens/bloodymary.png" class="card-img-top" alt="bloodmary">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bloody Mary</h5>
+                                    <p class="card-text"> A base de suco de tomate temperado e vodca, o Bloody Mary é
+                                        elegante e
+                                        delicioso.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+
+                        <div class="col col-md-3">
+                            <div class="card card-carousel">
+                                <a href="./components/drinks/negroni.html">
+                                    <img src="assets/imagens/negroni.png" class="card-img-top" alt="negroni">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Negroni</h5>
+                                        <p class="card-text">O Negroni é um drink clássico da coquetelaria e ótimo para
+                                            ser
+                                            servido como aperitivo.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+
+                        <div class="card card-carousel">
+                            <a href="./components/drinks/pinacolada.html">
+                                <img src="assets/imagens/pinacolada.png" class="card-img-top" alt="pinacolada">
+                                <div class="card-body">
+                                    <h5 class="card-title">Piña Colada </h5>
+                                    <p class="card-text">e você é fã de bebidas doces, acrescente leite condensado </br>
+                                        à sua piña colada e se delicie!
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+
+                        <div class="card card-carousel">
+                            <a href="./components/drinks/mojito.html">
+                                <img src="assets/imagens/mojito.png" class="card-img-top" alt="mojito">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mojito </h5>
+                                    <p class="card-text">É um dos drinks mais famosos do mundo, super
+                                        refrescantes e considerado primo da caipirinha.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <p id="drink" class="text-center"> Drinks com . . .</p>
+
+        <!--desenhos garrafas-->
+
+        <div class="home-garrafas container-fluid">
+            <div class="card-group align-items-end justify-content-between">
+                <div id="garrafa-cachaca" class="card card-home-garrafas">
+                    <a href="./components/drinkscachaça.html" class="cards-link">
+                        <img src="assets/imagens/cachaca-desenho.png" class="img-fluid imgs-card" alt="cachaça">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text garrafas-card-text">Cachaça</p>
+                    </div>
+
+                </div>
+                <div class="card card-home-garrafas">
+                    <a href="./components/drinksgin.html" class="cards-link">
+                        <img src="assets/imagens/gin-desenho.png" class="img-fluid imgs-card" alt="gin">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text garrafas-card-text">Gin</p>
+                    </div>
+                </div>
+                <div class="card card-home-garrafas">
+                    <a href="./components/drinksvinho.html" class="cards-link">
+                        <img src="assets/imagens/vinho-desenho.png" class="img-fluid imgs-card" alt="vinho">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text garrafas-card-text">Vinho</p>
+                    </div>
+                </div>
+                <div class="card card-home-garrafas">
+                    <a href="./components/drinkstequila.html" class="cards-link">
+                        <img src="assets/imagens/tequila-desenho.png" class="img-fluid imgs-card" alt="tequila">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text garrafas-card-text">Tequila</p>
+                    </div>
+                </div>
+                <div class="card card-home-garrafas">
+                    <a href="./components/drinkslicor.html" class="cards-link">
+                        <img src="assets/imagens/licor-desenho.png" class="img-fluid imgs-card" alt="licor">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text garrafas-card-text">Licor</p>
+                    </div>
+                </div>
+                <div class="card card-home-garrafas">
+                    <a href="./components/drinkswhisky.html" class="cards-link">
+                        <img src="assets/imagens/whisky-desenho.png" class="img-fluid imgs-card" alt="whisky">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text garrafas-card-text">Whisky</p>
+                    </div>
+                </div>
+                <div class="card card-home-garrafas">
+                    <a href="./components/drinksvodka.html" class="cards-link">
+                        <img src="assets/imagens/vodka-desenho.png" class="img-fluid imgs-card" alt="vodka">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text garrafas-card-text">Vodka</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="container-galeria"></div>
+
+
+
+        </div>
+
+
+
+
+
+
+        <!--rodapé-->
+        <footer class="footer">
+            <div class="left">
+
+                <p class="links">
+
+                    <a href="index.html" title="Home">Home</a>
+                    <a href="components/sobre.html" title="Html">Sobre</a>
+                    <a href="components/fale-conosco.html" title="fale-conosco">Fale conosco</a>
+                    <a href="components/p" title="politicadeprivacidade">Política de privacidade</a>
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-pinterest"></i></a>
+
+                </div>
+                <p class="Copyright">Copyright &copy; 2023 DrinkLab - Todos os Direitos Reservados.</p>
+            </div><!--Left-->
+            <div class="right">
+                <h4 class="title-footer">Torne-se um assinante</h4>
+                <form action="#" method="post">
+                    <input type="text" name="nome" placeholder="Nome" required="" />
+                    <input type="email" name="email" placeholder="E-mail" required="" />
+                    <button class="btn">Enviar</button>
+                </form>
+            </div><!--Right-->
+        </footer>
+
+    </section>
+
+
+    <script src="script.js"></script>
+    <script src="carousel.js"></script>
+    <!-- ligando html com os js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+
+</body>
+
+</html>

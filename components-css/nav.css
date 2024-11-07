@@ -1,0 +1,136 @@
+/*importando fontes*/
+@font-face {
+    src: url('../assets/fonts/Poppins.ttf');
+    font-family: Poppins;
+}
+
+@font-face {
+    src: url('../assets/fonts/Kadwa-Regular.ttf');
+    font-family: Kadwa-Regular;
+}
+
+@font-face {
+    src: url('../assets/fonts/Kadwa-Bold.ttf');
+    font-family: Kadwa-Bold;
+}
+
+ul.navbar-nav .nav-link.active,
+ul.navbar-nav .nav-link.show {
+    font-family: 'Kadwa-Regular', sans-serif;
+    color: #EDE5DD;
+    --bs-nav-link-hover-color: #EDE5DD;
+    font-size: 16px;
+
+}
+
+/*mudar a grossura da fonte da navbar, quando clicado*/
+ul.nav-underline .nav-link.active,
+.nav-underline .show>.nav-link {
+    font-weight: normal;
+    color: #EDE5DD;
+    border-bottom-color: currentcolor;
+}
+
+/*padding = distancia entre traço (underline) e palavra*/
+a.nav-link {
+    font-family: 'Kadwa-Regular', sans-serif;
+    color: #EDE5DD;
+    --bs-nav-link-hover-color: #EDE5DD;
+    font-size: 16px;
+    padding: 0.2rem;
+
+}
+
+/*largura do traço (underline) da navbar*/
+nav.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: inherit;
+    padding-left: inherit;
+}
+
+/*grossura do traço (underline) da navbar*/
+/*distância entre uma palavra e outra na navbar*/
+ul.nav-underline {
+    --bs-nav-underline-border-width: 0.100rem;
+    --bs-nav-underline-gap: 2.5rem;
+}
+
+/*mudando tamanho da barra de buscar*/
+form.d-flex {
+    width: 45%;
+}
+
+/*posição do logo*/
+a.navbar-brand {
+    margin-right: 4%;
+    padding-top: 0;
+    margin-left: 4%;
+}
+
+/*mudando distância entre logo e topo da tela*/
+nav.navbar {
+    padding-top: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/*mudando distância entre "Login" e o canto da tela*/
+ul#ul-acesso {
+    margin-right: 4%;
+}
+
+/*mudando configurações da barra de buscar*/
+input.form-control {
+    width: 100%;
+    padding: .375rem .70rem;
+    background-color: #EDE5DD;
+    border: 1px solid #EDE5DD;
+    border-radius: 0.8rem 0 0 0.8rem;
+    font-family: Kadwa-Regular;
+    font-size: 15px;
+}
+
+
+/*mudando a cor e a sombra da borda da barra de buscar */
+input.form-control:focus {
+
+    background-color: #EDE5DD;
+    border-color: #EDE5DD;
+    box-shadow: none;
+}
+
+/*mudando a cor de "drinks" em buscar */
+input.form-control::placeholder {
+    color: #1F231B;
+}
+
+/* configurações do botão "buscar" com ícone de lupa*/
+button.btn {
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 0.375rem;
+    --bs-btn-line-height: 1.5;
+    --bs-btn-color: #1F231B;
+    --bs-btn-bg: #EDE5DD;
+    --bs-btn-border-width: var(--bs-border-width);
+    --bs-btn-border-color: #EDE5DD;
+    --bs-btn-border-radius: 0 0.8rem 0.8rem 0;
+    --bs-btn-hover-border-color: #EDE5DD;
+
+}
+
+/* cor da lupa */
+button.btn:hover {
+    color: #1F231B;
+    background-color: #EDE5DD;
+    border-color: #EDE5DD
+}
+
+button.navbar-toggler{
+    background-color: #EDE5DD;
+}
+
+@media (max-width: 1023px) {
+    ul#ul-acesso {
+        margin-top: 1.5rem;
+    }
+}

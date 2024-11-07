@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../components-css/nav.css">
+    <link rel="stylesheet" href="../components-css/footer.css">
+    <link rel="stylesheet" href="../components-css/dicamexeroubater.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--biblioteca de icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg shadow-5rem">
+            <div class="container-fluid">
+                <a class="navbar-brand a" href="../index.html" id="inicio-link">
+                    <img src="../assets/imagens/logocomfundo.png" alt="Bootstrap" width="138" height="75">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+
+                    <!-- nome das páginas na nav bar-->
+                    <ul class="navbar-nav nav-underline ml-auto ">
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" id="receitas-link"
+                                href="./receitas.html">Receitas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" id="fale-conosco-link"
+                                href="./fale-conosco.html">Fale Conosco</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" id="sobre-link" href="./sobre.html">Sobre</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" id="contato-link" href="./contato.html">Contato</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex d-lg-flex d-none justify-content-center" role="search">
+                        <input class="form-control" type="search" placeholder="Drinks" aria-label="Search">
+                        <!-- modelo icone--> <button class="btn" type="submit"><span
+                                class="bi bi-search"></span></button>
+                    </form>
+
+                    <ul class="navbar-nav nav-underline ml-auto " id="ul-acesso">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" id="acesso-link" href="./acesso.html">Login</a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="titulo">
+        <h1> Como escolher entre </br>
+            bater e mexer um drink? </h1>
+    </div>
+
+    <div class="textocorrido">
+
+        <h2> QUADO DEVO MEXER UM DRINK?</h2>
+
+        <p> Existem duas principais maneiras de misturar componentes em um coquetel: bater ou mexer. Quando as bebidas
+            alcóolicas de baixa densidade
+            são misturadas, podem ser simplesmente mexidas, já que a mistura se tornará homogênea facilmente. Além
+            disso, mexer é uma opção quando a intenção é gelar o
+            coquetel sem diluí-lo. O bartender utiliza um mixing glass com grandes pedras de gelo, adiciona as bebidas e
+            mexe até que a mistura fique bem gelada.
+            O resultado é um coquetel mais forte, bem resfriado e com menos diluição. Outra situação em que é
+            recomendado mexer um coquetel é quando um dos componentes
+            é gaseificado. Nesse caso, bater na coqueteleira seria desastroso. A técnica mais adequada para misturar
+            componentes gaseificados com outros líquidos de maior
+            densidade, como sucos de fruta e purês, é o roll.</p>
+
+        <h2> QUANDO DEVO BATER UM DRINK?</h2>
+
+        <p> Quando os componentes do coquetel não se misturam facilmente, o ideal é bater na coqueteleira. Ao bater um
+            coquetel, os ingredientes são misturados de
+            forma mais intensa e ar é injetado. Isso faz com que haja uma grande diferença entre um coquetel mexido e um
+            coquetel batido. O coquetel batido fica mais
+            aerado e, em alguns casos, pode até formar uma espuma. Além disso, o impacto da agitação quebra o gelo em
+            pequenas partículas, resultando em um coquetel mais diluído.
+            Portanto, pode-se dizer que um coquetel batido tende a ser mais leve do que um coquetel mexido.</p>
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="left">
+
+            <p class="links">
+
+                <a href="../index.html" title="Home">Home</a>
+                <a href="../components/sobre.html" title="Html">Sobre</a>
+                <a href="../components/fale-conosco.html" title="fale-conosco">Fale conosco</a>
+                <a href="../components/politicadeprivacidade.html" title="politicadeprivacidade">Política de
+                    privacidade</a>
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-pinterest"></i></a>
+
+            </div>
+            <p class="Copyright">Copyright &copy; 2023 DrinkLab - Todos os Direitos Reservados.</p>
+        </div><!--Left-->
+        <div class="right">
+            <h4 class="title-footer">Torne-se um assinante</h4>
+            <form action="#" method="post">
+                <input type="text" name="nome" placeholder="Nome" required="" />
+                <input type="email" name="email" placeholder="E-mail" required="" />
+                <button class="btn">Enviar</button>
+            </form>
+        </div><!--Right-->
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

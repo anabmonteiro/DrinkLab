@@ -1,0 +1,225 @@
+/* tamanhos de tela */
+@media (min-width: 1024px) {
+    body {
+        background-image: url("../assets/imagens/fundoreceitas.png");
+        min-height: 1080px;
+        max-height: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-image: url("../assets/imagens/fundoreceitas.png");
+        min-height: 1023px;
+        max-height: 100%;
+
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        background-image: url("../assets/imagens/fundoreceitas.png");
+        min-height: 767px;
+        max-height: 100vh;
+
+    }
+}
+
+
+
+/* icone botão " ver receitas" */
+.btn-icon {
+    background-color: transparent;
+   
+
+}
+
+div.home a.btn-btn-primary-btn-custom{
+   color:#ECE5DC;
+   font-family: 'poppins', sans-serif;
+  padding-right: 0.8vw;
+   padding-left: 0.8vw;
+   padding-top: 0.4vw;
+   padding-bottom: 0.4vw;
+
+   font-size: 1vw;
+   border-radius: 0.5vw;
+   background-color: rgba(236, 229, 220, 0.10);
+}
+
+
+
+/* alterando o botão "ver receitas */
+a.btn-primary {
+
+    --bs-btn-bg: rgba(236, 229, 220, 0.27);
+    /*botão*/
+    --bs-btn-hover-color: #1F231B;
+    /*letra do botão apertado*/
+    --bs-btn-hover-bg: rgba(236, 229, 220, 0.874);
+    /*botão apertado*/
+    --bs-btn-active-bg: rgba(236, 229, 220, 0.874);
+    /*botão ativo*/
+
+}
+
+/* botão "ver tudo": cor da letra, tamanho, fonte, canto arredondado... */
+a.btn {
+    color: #ECE5DC;
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-padding-y: 0.60rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    --bs-btn-border-width: none;
+    border-radius: 0.5rem;
+}
+
+/* botão "ver tudo": cor da letra, tamanho, fonte, canto arredondado... */
+#buttonVerTudo {
+    --bs-btn-padding-x: 1.4rem;
+    --bs-btn-padding-y: 0.20rem;
+    margin: 1rem;
+    --bs-btn-bg: rgba(236, 229, 220, 0.10);
+}
+
+
+
+/* banner com dicas*/
+div.row.row-banner {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* banner com dicas*/
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* banner com dicas*/
+div.col-1-banner {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* banner com dicas*/
+div#col-2-banner {
+    margin: 0;
+    padding: 0;
+}
+
+/* banner com dicas*/
+div#col-3-banner {
+    margin: 0;
+    padding: 0;
+}
+
+/* banner com dicas*/
+img#mexeroubater.img-fluid.banner-image {
+    height: 100%;
+}
+
+/* banner com dicas*/
+.banner-overlay {
+    position: relative;
+}
+
+/* banner com dicas*/
+#banner-textum {
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-align: left;
+
+}
+
+/* banner com dicas*/
+#banner-textdois {
+    position: absolute;
+    top: 73%;
+    left: 33%;
+    margin-bottom: 8vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-align: left;
+}
+
+/* banner com dicas*/
+#banner-texttres {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-11%, -50%);
+    text-align: center;
+    text-align: right;
+}
+
+/* config titulo do banner maior */
+.banner-text h2 {
+    font-size: 4vw;
+    color: #B06835;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+   transition: font-size 0.2s;
+
+}
+
+/* banner com dicas*/
+.banner-text:hover h2{
+   font-size:4.8vw;/* tamanho da letra quando passa o mouse */
+}
+
+/* config textos dos banneres */
+.banner-text p {
+    font-size: 1.8vw;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+   color: #EDE4DD;
+   transition: font-size 0.2s;
+
+}
+
+.banner-text:hover p {
+    font-size: 2vw;/* tamanho da letra quando passa o mouse */
+   }
+
+   /* config textos dos banneres */
+.banner-text p2 {
+   font-size: 1.8vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #EDE4DD;
+  transition: font-size 0.2s;
+  margin-bottom: 2vw;
+
+
+ 
+  
+
+}
+
+.banner-text:hover p2 {
+   font-size: 2vw;/* tamanho da letra quando passa o mouse */
+  }
+
+/* botão saiba mais (dicas harmonizar) */
+#buttonsaibamais{
+--bs-btn-padding-x: 0.8vw;
+--bs-btn-padding-y: 0.3vw;
+font-size: 1vw;
+border-radius: 0.5vw;
+}
+
+
+
+
